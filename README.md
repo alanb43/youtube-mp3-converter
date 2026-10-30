@@ -1,6 +1,8 @@
 # YouTube MP3 Converter
 
-A small Mac app that converts a YouTube video to an MP3 file. It works on very long videos (7+ hours), retries network hiccups automatically in the background, and shows a clear message when something can't be fixed by retrying (private or removed video, bad URL, full disk, etc.).
+Why'd I make this when I can google "youtube to mp3 downloader" and find 5 different sketchy sites to do it for me? Because downloading [7 hour Tiesto trance sets](https://youtu.be/4C5pUX4bF10?si=W7DtPDMR2TqwJ8ph&t=7922) at 256 bitrate breaks these stupid sites because they try to load it all into memory & convert and have caps on how much memory you can use for a single download. Good news: your Apple-silicon mac can do this ridiculously fast even while writing to disk, which is what this downloader does for you.
+
+This small Mac app converts a YouTube video to an MP3 file. It works on very long videos, retries network hiccups automatically in the background, and shows a clear message when something can't be fixed by retrying (private or removed video, bad URL, full disk, etc.).
 
 Built with Python/Tkinter, [yt-dlp](https://github.com/yt-dlp/yt-dlp) and ffmpeg (bundled, no Homebrew needed).
 
@@ -29,6 +31,9 @@ This installs **YouTube MP3 Converter** into `~/Applications`. Open it from Spot
 3. Click **Convert**.
 
 **Which bitrate?** YouTube's audio is already compressed, so a higher bitrate mostly makes bigger files. Use **128 kbps** for speech (lectures, podcasts, audiobooks) and **192 kbps** for music. A 7-hour video is about 400 MB at 128 kbps.
+
+<img width="595" height="254" alt="image" src="https://github.com/user-attachments/assets/d037a7fc-b817-4553-b8c2-cb225395ea86" />
+
 
 ## How errors are handled
 
