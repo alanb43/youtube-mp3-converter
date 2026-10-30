@@ -8,8 +8,6 @@ Built with Python/Tkinter, [yt-dlp](https://github.com/yt-dlp/yt-dlp) and ffmpeg
 
 **Requirements:** an Apple Silicon Mac (M1 or later) and [Python 3.11 from python.org](https://www.python.org/downloads/macos/) (it includes Tk, which the app needs).
 
-### Option A: build it yourself (recommended)
-
 ```bash
 git clone https://github.com/alanb43/youtube-mp3-converter.git
 cd youtube-mp3-converter
@@ -17,17 +15,6 @@ python3 build_app.py
 ```
 
 This installs **YouTube MP3 Converter** into `~/Applications`. Open it from Spotlight (⌘Space, type "YouTube MP3") or Finder.
-
-### Option B: download the prebuilt app
-
-1. Download `YouTube-MP3-Converter-macOS-arm64.zip` from the [latest release](../../releases/latest) and unzip it.
-2. Move the app to `~/Applications` (or `/Applications`).
-3. The app isn't signed by Apple, so the first time, right-click it, choose **Open**, then confirm. If macOS still refuses, run:
-   ```bash
-   xattr -dr com.apple.quarantine "/Applications/YouTube MP3 Converter.app"
-   ```
-
-The prebuilt app expects Python 3.11 from python.org at its default location. If it won't start, use Option A.
 
 ### Run without installing
 
